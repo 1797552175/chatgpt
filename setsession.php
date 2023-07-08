@@ -10,7 +10,7 @@ if (mb_substr($_POST["message"], 0, 1, 'UTF-8') === '画') {
     $postData = [
         "model" => "gpt-3.5-turbo",
         "temperature" => 0,
-        "stream" => false,
+        "stream" => true,
         "messages" => [],
     ];
     if (!empty($context)) {
